@@ -1,0 +1,19 @@
+Collecting paho-mqtt==1.6.1
+  Downloading paho-mqtt-1.6.1.tar.gz (99 kB)
+Collecting pandas==1.5.1
+  Downloading pandas-1.5.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+Collecting pytz>=2020.1
+  Downloading pytz-2023.3-py2.py3-none-any.whl (502 kB)
+Collecting numpy>=1.20.3; python_version < "3.10"
+  Downloading numpy-1.24.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+Collecting python-dateutil>=2.8.1
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.8.1->pandas==1.5.1->-r requirements.txt (line 2)) (1.14.0)
+Building wheels for collected packages: paho-mqtt
+  Building wheel for paho-mqtt (setup.py): started
+  Building wheel for paho-mqtt (setup.py): finished with status 'done'
+  Created wheel for paho-mqtt: filename=paho_mqtt-1.6.1-py3-none-any.whl size=62114 sha256=fb8dc3a5dfbe8d3ffce91ef636f84013e2da5a07ea34527f146b821cf364fce2
+  Stored in directory: /root/.cache/pip/wheels/6a/48/01/c895c027e9b9367ec5470fbf371ee56e795a49ac6a19aa4c9f
+Successfully built paho-mqtt
+Installing collected packages: paho-mqtt, pytz, numpy, python-dateutil, pandas
+Successfully installed numpy-1.24.2 paho-mqtt-1.6.1 pandas-1.5.1 python-dateutil-2.8.2 pytz-2023.3

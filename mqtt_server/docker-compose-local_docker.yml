@@ -1,0 +1,30 @@
+version: '3.9'
+services:
+  MQTT_Server:
+    image: eclipse-mosquitto:2
+    container_name: MQTT_SERVER
+    expose:
+      - "1883"
+      - "9001"
+    networks:
+      comm-mqtt:
+        aliases:
+          - server.mqtt
+      mqtt-mininet:
+        ipv4_address: 222.222.222.2 
+        aliases:
+          - server.mqtt
+    entrypoint: mosquitto -c /mosquitto-no-auth.conf  
+
+networks:
+  comm-mqtt:
+    name: comm-mqtt
+    driver: bridge
+  mqtt-mininet:
+    name: mqtt-mininet
+    ipam:
+      driver: default
+      config:
+        - subnet: "222.222.222.0/24"
+  
+  

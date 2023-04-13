@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  MININET_Server:
+    image: maykisantos/mininet-modelo:0.2
+    deploy:
+      resources:
+        limits:
+          memory: 3gb
+        reservations:
+          memory: 800mb
+    container_name: MININET_SERVER
+    volumes:
+      - .:/fot-simulator/sensores
+      - /lib/modules:/lib/modules
+    working_dir: /fot-simulator
+    env_file: ./local_docker.env
+    environment:
+     - PASTA_LOGS=/fot-simulator/sensores/devops/logs
+    privileged: true
+    entrypoint: bash /fot-simulator/commands/inicializa_mininet.sh
+    # entrypoint: sleep 1d
+
