@@ -13,7 +13,7 @@ import json
 import random
 
 service_mix_path = '/home/openflow/service-mix'
-fuseki_path='/home/openflow/fuseki/apache-jena-fuseki-3.11.0'
+fuseki_path ='/home/openflow/fuseki/apache-jena-fuseki-3.11.0'
 
 #################################
 def startNAT( root, inetIntf='eth0', subnet='10.0/8' ):
